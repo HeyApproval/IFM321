@@ -1473,14 +1473,14 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.setTransform(12,121);
 	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(164).to({_off:false},0).wait(47));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(150).to({_off:false},0).wait(61));
 
 	// CTA
 	this.instance_3 = new lib.CTA();
 	this.instance_3.setTransform(64.8,167.3,1,1,0,0,0,-0.2,0.3);
 	this.instance_3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(210).to({_off:false},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(165).to({_off:false},0).wait(46));
 
 	// logo
 	this.instance_4 = new lib.logo();
@@ -1651,7 +1651,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/IFM321_Display_Ingredients_300x250_atlas_P_1.png?1629848487493", id:"IFM321_Display_Ingredients_300x250_atlas_P_1"}
+		{src:"images/IFM321_Display_Ingredients_300x250_atlas_P_1.png?1629848744970", id:"IFM321_Display_Ingredients_300x250_atlas_P_1"}
 	],
 	preloads: []
 };
