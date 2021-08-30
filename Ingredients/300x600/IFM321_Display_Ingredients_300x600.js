@@ -1452,15 +1452,15 @@ if (reversed == null) { reversed = false; }
 
 	// HEAD1
 	this.instance = new lib.HEAD1();
-	this.instance.setTransform(20,88.1,1.6037,1.6037);
+	this.instance.setTransform(42,94.95,1.4207,1.4207);
 	this.instance.alpha = 0;
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({y:40,alpha:1},21,cjs.Ease.quadOut).to({_off:true},100).wait(55));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({y:52.3,alpha:1},21,cjs.Ease.quadOut).to({_off:true},100).wait(55));
 
 	// HEAD2
 	this.instance_1 = new lib.HEAD2();
-	this.instance_1.setTransform(20,40,1.6037,1.6037);
+	this.instance_1.setTransform(42,52.3,1.4207,1.4207);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
@@ -1468,21 +1468,21 @@ if (reversed == null) { reversed = false; }
 
 	// SUBHEAD
 	this.instance_2 = new lib.SUBHEAD();
-	this.instance_2.setTransform(20,149.65,1.6037,1.6037);
+	this.instance_2.setTransform(42,149.45,1.4207,1.4207);
 	this.instance_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(160).to({_off:false},0).wait(17));
 
 	// CTA
 	this.instance_3 = new lib.CTA();
-	this.instance_3.setTransform(112.6,232.95,1.6037,1.6037,0,0,0,-0.2,0.3);
+	this.instance_3.setTransform(124,223.35,1.4207,1.4207,0,0,0,-0.2,0.4);
 	this.instance_3._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(175).to({_off:false},0).wait(2));
 
 	// logo
 	this.instance_4 = new lib.logo();
-	this.instance_4.setTransform(151.7,550,2.2599,2.2599);
+	this.instance_4.setTransform(151.7,550,1.9799,1.9799);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(177));
 
@@ -1649,7 +1649,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/IFM321_Display_Ingredients_300x600_atlas_P_1.png?1630364829251", id:"IFM321_Display_Ingredients_300x600_atlas_P_1"}
+		{src:"images/IFM321_Display_Ingredients_300x600_atlas_P_1.png?1630365901987", id:"IFM321_Display_Ingredients_300x600_atlas_P_1"}
 	],
 	preloads: []
 };
