@@ -1452,15 +1452,15 @@ if (reversed == null) { reversed = false; }
 
 	// HEAD1
 	this.instance = new lib.HEAD1();
-	this.instance.setTransform(9.95,79.15,1.1392,1.1392);
+	this.instance.setTransform(15.05,77.1,1.0677,1.0677,0,0,0,0.1,0.1);
 	this.instance.alpha = 0;
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({y:45,alpha:1},21,cjs.Ease.quadOut).to({_off:true},100).wait(55));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({regX:0,regY:0,x:14.95,y:45,alpha:1},21,cjs.Ease.quadOut).to({_off:true},100).wait(55));
 
 	// HEAD2
 	this.instance_1 = new lib.HEAD2();
-	this.instance_1.setTransform(9.95,45,1.1392,1.1392);
+	this.instance_1.setTransform(14.95,45,1.0677,1.0677);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
@@ -1468,14 +1468,14 @@ if (reversed == null) { reversed = false; }
 
 	// SUBHEAD
 	this.instance_2 = new lib.SUBHEAD();
-	this.instance_2.setTransform(9.95,145.7,1.1392,1.1392);
+	this.instance_2.setTransform(14.95,139.4,1.0677,1.0677);
 	this.instance_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(160).to({_off:false},0).wait(17));
 
 	// CTA
 	this.instance_3 = new lib.CTA();
-	this.instance_3.setTransform(75.75,204.9,1.1392,1.1392,0,0,0,-0.2,0.4);
+	this.instance_3.setTransform(76.65,194.9,1.0677,1.0677,0,0,0,-0.2,0.4);
 	this.instance_3._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(175).to({_off:false},0).wait(2));
@@ -1639,7 +1639,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(79.5,299.5,90,301);
+p.nominalBounds = new cjs.Rectangle(79.5,299.5,85,301);
 // library properties:
 lib.properties = {
 	id: '0957C5EC3B874C629166840920B09671',
@@ -1649,7 +1649,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/IFM321_Display_Ingredients_160x600_atlas_P_1.png?1630364891617", id:"IFM321_Display_Ingredients_160x600_atlas_P_1"}
+		{src:"images/IFM321_Display_Ingredients_160x600_atlas_P_1.png?1630365916658", id:"IFM321_Display_Ingredients_160x600_atlas_P_1"}
 	],
 	preloads: []
 };
