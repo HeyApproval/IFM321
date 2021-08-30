@@ -1452,7 +1452,7 @@ if (reversed == null) { reversed = false; }
 
 	// HEAD1
 	this.instance = new lib.HEAD1();
-	this.instance.setTransform(40,84.1,1.4695,1.4695);
+	this.instance.setTransform(20,88.1,1.6037,1.6037);
 	this.instance.alpha = 0;
 	this.instance._off = true;
 
@@ -1460,7 +1460,7 @@ if (reversed == null) { reversed = false; }
 
 	// HEAD2
 	this.instance_1 = new lib.HEAD2();
-	this.instance_1.setTransform(40,40,1.4695,1.4695);
+	this.instance_1.setTransform(20,40,1.6037,1.6037);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
@@ -1468,14 +1468,14 @@ if (reversed == null) { reversed = false; }
 
 	// SUBHEAD
 	this.instance_2 = new lib.SUBHEAD();
-	this.instance_2.setTransform(40,140.5,1.4695,1.4695);
+	this.instance_2.setTransform(20,149.65,1.6037,1.6037);
 	this.instance_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(160).to({_off:false},0).wait(17));
 
 	// CTA
 	this.instance_3 = new lib.CTA();
-	this.instance_3.setTransform(124.85,216.8,1.4695,1.4695,0,0,0,-0.2,0.3);
+	this.instance_3.setTransform(112.6,232.95,1.6037,1.6037,0,0,0,-0.2,0.3);
 	this.instance_3._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(175).to({_off:false},0).wait(2));
@@ -1649,7 +1649,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/IFM321_Display_Ingredients_300x600_atlas_P_1.png?1630358403172", id:"IFM321_Display_Ingredients_300x600_atlas_P_1"}
+		{src:"images/IFM321_Display_Ingredients_300x600_atlas_P_1.png?1630364829251", id:"IFM321_Display_Ingredients_300x600_atlas_P_1"}
 	],
 	preloads: []
 };
