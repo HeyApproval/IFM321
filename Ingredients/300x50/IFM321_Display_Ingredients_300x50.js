@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"IFM321_Display_Ingredients_300x50_atlas_P_1", frames: [[397,0,99,100],[295,0,100,100],[195,0,98,199],[0,0,193,201]]}
+		{name:"IFM321_Display_Ingredients_300x50_atlas_P_1", frames: [[397,0,99,100],[295,0,100,100],[195,0,98,199],[0,0,193,201],[295,102,120,45]]}
 ];
 
 
@@ -50,6 +50,13 @@ lib.ssMetadata = [
 (lib.IconsPapaya = function() {
 	this.initialize(ss["IFM321_Display_Ingredients_300x50_atlas_P_1"]);
 	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Logomobile = function() {
+	this.initialize(ss["IFM321_Display_Ingredients_300x50_atlas_P_1"]);
+	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -1103,7 +1110,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(-42.9,-11.1,85.8,22.799999999999997), null);
 
 
-(lib.logo = function(mode,startPosition,loop,reversed) {
+(lib.logobitmap = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -1114,21 +1121,21 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Layer_1 copy
+	// vector
 	this.instance = new lib.IFMlogoreversedRTRGBai("synched",0);
-	this.instance.setTransform(0.1,0.15,0.74,0.74,0,0,0,72.1,22.2);
+	this.instance.setTransform(0.5,1.75,0.74,0.74,0,0,0,72,22.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-	// Layer_1
-	this.instance_1 = new lib.IFMlogoreversedRTRGBai("synched",0);
-	this.instance_1.setTransform(0.1,0.15,0.74,0.74,0,0,0,72.1,22.2);
+	// PS
+	this.instance_1 = new lib.Logomobile();
+	this.instance_1.setTransform(-60,-23);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.logo, new cjs.Rectangle(-53.2,-16.3,106.5,32.7), null);
+}).prototype = getMCSymbolPrototype(lib.logobitmap, new cjs.Rectangle(-60,-23,120,45), null);
 
 
 // stage content:
@@ -1209,12 +1216,12 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(218).to({_off:false},0).wait(1));
 
 	// logo
-	this.instance_4 = new lib.logo();
-	this.instance_4.setTransform(240.7,25);
+	this.instance_4 = new lib.logobitmap();
+	this.instance_4.setTransform(240.65,25,1,1,0,0,0,0.1,0.1);
 	this.instance_4.alpha = 0;
 	this.instance_4._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(192).to({_off:false},0).to({alpha:1},12).wait(15));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(192).to({_off:false},0).to({x:240.7,y:25.05,alpha:1},12).wait(15));
 
 	// logo-bkgd
 	this.instance_5 = new lib.Tween1("synched",0);
@@ -1270,7 +1277,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(149.5,24.5,151,44.5);
+p.nominalBounds = new cjs.Rectangle(149.5,24.5,151.10000000000002,44.5);
 // library properties:
 lib.properties = {
 	id: '0957C5EC3B874C629166840920B09671',
@@ -1280,7 +1287,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/IFM321_Display_Ingredients_300x50_atlas_P_1.png?1630423288558", id:"IFM321_Display_Ingredients_300x50_atlas_P_1"}
+		{src:"images/IFM321_Display_Ingredients_300x50_atlas_P_1.png?1630425653326", id:"IFM321_Display_Ingredients_300x50_atlas_P_1"}
 	],
 	preloads: []
 };

@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"IFM321_Display_Ingredients_160x600_atlas_P_1", frames: [[295,0,100,102],[397,204,99,100],[0,405,199,99],[302,306,99,99],[397,0,100,100],[101,203,98,199],[195,0,98,199],[397,102,100,100],[201,206,99,100],[201,308,99,100],[201,410,99,100],[0,0,193,201],[0,203,99,200],[295,104,100,100],[302,407,99,99]]}
+		{name:"IFM321_Display_Ingredients_160x600_atlas_P_1", frames: [[295,0,100,102],[201,284,99,100],[0,405,199,99],[403,306,99,99],[397,0,100,100],[101,203,98,199],[195,0,98,199],[397,102,100,100],[201,386,99,100],[302,306,99,100],[302,408,99,100],[0,0,193,201],[0,203,99,200],[363,204,100,100],[403,407,99,99],[201,201,160,81]]}
 ];
 
 
@@ -127,6 +127,13 @@ lib.ssMetadata = [
 (lib.IconsWatermelonSm = function() {
 	this.initialize(ss["IFM321_Display_Ingredients_160x600_atlas_P_1"]);
 	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Logo160 = function() {
+	this.initialize(ss["IFM321_Display_Ingredients_160x600_atlas_P_1"]);
+	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -1376,7 +1383,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(-56,-13.5,112,28), null);
 
 
-(lib.logo = function(mode,startPosition,loop,reversed) {
+(lib.logobitmap = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -1387,21 +1394,27 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Layer_1 copy
-	this.instance = new lib.IFMlogoreversedRTRGBai("synched",0);
-	this.instance.setTransform(0.1,0.15,0.74,0.74,0,0,0,72.1,22.2);
+	// PS copy
+	this.instance = new lib.Logo160();
+	this.instance.setTransform(-80,-41);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-	// Layer_1
-	this.instance_1 = new lib.IFMlogoreversedRTRGBai("synched",0);
-	this.instance_1.setTransform(0.1,0.15,0.74,0.74,0,0,0,72.1,22.2);
+	// PS
+	this.instance_1 = new lib.Logo160();
+	this.instance_1.setTransform(-80,-41);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
+	// Layer_1 copy
+	this.instance_2 = new lib.IFMlogoreversedRTRGBai("synched",0);
+	this.instance_2.setTransform(0.65,0.1,0.97,0.97,0,0,0,72,22.1);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.logo, new cjs.Rectangle(-53.2,-16.3,106.5,32.7), null);
+}).prototype = getMCSymbolPrototype(lib.logobitmap, new cjs.Rectangle(-80,-41,160,81), null);
 
 
 // stage content:
@@ -1481,8 +1494,8 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(175).to({_off:false},0).wait(2));
 
 	// logo
-	this.instance_4 = new lib.logo();
-	this.instance_4.setTransform(81.7,559.45,1.32,1.32);
+	this.instance_4 = new lib.logobitmap();
+	this.instance_4.setTransform(81.65,559.45);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(177));
 
@@ -1649,7 +1662,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/IFM321_Display_Ingredients_160x600_atlas_P_1.png?1630365916658", id:"IFM321_Display_Ingredients_160x600_atlas_P_1"}
+		{src:"images/IFM321_Display_Ingredients_160x600_atlas_P_1.png?1630424875154", id:"IFM321_Display_Ingredients_160x600_atlas_P_1"}
 	],
 	preloads: []
 };
