@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"IFM321_Display_Foods_300x50_atlas_P_1", frames: [[397,0,99,100],[295,0,100,100],[195,0,98,199],[0,0,193,201],[295,102,120,45]]}
+		{name:"IFM321_Display_Foods_300x50_atlas_P_1", frames: [[202,0,201,100],[405,0,100,100],[202,102,100,99],[0,0,200,200],[304,102,120,45]]}
 ];
 
 
@@ -26,7 +26,7 @@ lib.ssMetadata = [
 
 
 
-(lib.IconsBlueberry = function() {
+(lib.IconsFish = function() {
 	this.initialize(ss["IFM321_Display_Foods_300x50_atlas_P_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -40,14 +40,14 @@ lib.ssMetadata = [
 
 
 
-(lib.IconsGrapesPurple = function() {
+(lib.IconsHeart = function() {
 	this.initialize(ss["IFM321_Display_Foods_300x50_atlas_P_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.IconsPapaya = function() {
+(lib.IconsKale = function() {
 	this.initialize(ss["IFM321_Display_Foods_300x50_atlas_P_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
@@ -646,14 +646,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.IconsPapaya();
-	this.instance.setTransform(-28.95,-30.15,0.3,0.3);
+	this.instance = new lib.IconsKale();
+	this.instance.setTransform(-30,-30,0.3,0.3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.papaya, new cjs.Rectangle(-28.9,-30.1,57.9,60.3), null);
+}).prototype = getMCSymbolPrototype(lib.papaya, new cjs.Rectangle(-30,-30,60,60), null);
 
 
 (lib.grapespur = function(mode,startPosition,loop,reversed) {
@@ -668,14 +668,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.IconsGrapesPurple();
-	this.instance.setTransform(-14.7,-29.85,0.3,0.3);
+	this.instance = new lib.IconsFish();
+	this.instance.setTransform(-15,30.3,0.3,0.3,-89.9854);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.grapespur, new cjs.Rectangle(-14.7,-29.8,29.4,59.7), null);
+}).prototype = getMCSymbolPrototype(lib.grapespur, new cjs.Rectangle(-15,-30,30,60.3), null);
 
 
 (lib.grapefruit = function(mode,startPosition,loop,reversed) {
@@ -712,14 +712,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.IconsBlueberry();
-	this.instance.setTransform(-14.85,-15,0.3,0.3);
+	this.instance = new lib.IconsHeart();
+	this.instance.setTransform(-15,-15,0.3,0.3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.blueberry, new cjs.Rectangle(-14.8,-15,29.700000000000003,30), null);
+}).prototype = getMCSymbolPrototype(lib.blueberry, new cjs.Rectangle(-15,-15,30,29.7), null);
 
 
 (lib.HEAD2 = function(mode,startPosition,loop,reversed) {
@@ -1339,7 +1339,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/IFM321_Display_Foods_300x50_atlas_P_1.png?1630429483500", id:"IFM321_Display_Foods_300x50_atlas_P_1"}
+		{src:"images/IFM321_Display_Foods_300x50_atlas_P_1.png?1630512837222", id:"IFM321_Display_Foods_300x50_atlas_P_1"}
 	],
 	preloads: []
 };

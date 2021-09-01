@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"IFM321_Display_Piece_320x50_atlas_P_1", frames: [[397,0,99,100],[295,0,100,100],[195,0,98,199],[0,0,193,201],[295,102,120,45]]}
+		{name:"IFM321_Display_Piece_320x50_atlas_P_1", frames: [[0,0,201,200],[304,0,100,100],[203,0,99,200],[304,102,100,100],[0,202,120,45]]}
 ];
 
 
@@ -26,7 +26,7 @@ lib.ssMetadata = [
 
 
 
-(lib.IconsBlueberry = function() {
+(lib.IconsBroccoli = function() {
 	this.initialize(ss["IFM321_Display_Piece_320x50_atlas_P_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -40,14 +40,14 @@ lib.ssMetadata = [
 
 
 
-(lib.IconsGrapesPurple = function() {
+(lib.IconsPineapple = function() {
 	this.initialize(ss["IFM321_Display_Piece_320x50_atlas_P_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.IconsPapaya = function() {
+(lib.IconsStrawberry = function() {
 	this.initialize(ss["IFM321_Display_Piece_320x50_atlas_P_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
@@ -646,14 +646,36 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.IconsPapaya();
+	this.instance = new lib.IconsBroccoli();
 	this.instance.setTransform(-28.95,-30.15,0.3,0.3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.papaya, new cjs.Rectangle(-28.9,-30.1,57.9,60.3), null);
+}).prototype = getMCSymbolPrototype(lib.papaya, new cjs.Rectangle(-28.9,-30.1,60.3,60), null);
+
+
+(lib.leavesgrgr = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.instance = new lib.IconsStrawberry();
+	this.instance.setTransform(-14.85,-15,0.3,0.3);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.leavesgrgr, new cjs.Rectangle(-14.8,-15,30,30), null);
 
 
 (lib.grapespur = function(mode,startPosition,loop,reversed) {
@@ -668,14 +690,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.IconsGrapesPurple();
+	this.instance = new lib.IconsPineapple();
 	this.instance.setTransform(-14.7,-29.85,0.3,0.3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.grapespur, new cjs.Rectangle(-14.7,-29.8,29.4,59.7), null);
+}).prototype = getMCSymbolPrototype(lib.grapespur, new cjs.Rectangle(-14.7,-29.8,29.7,60), null);
 
 
 (lib.grapefruit = function(mode,startPosition,loop,reversed) {
@@ -698,28 +720,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = getMCSymbolPrototype(lib.grapefruit, new cjs.Rectangle(-15,-15,30,30), null);
-
-
-(lib.blueberry = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_1
-	this.instance = new lib.IconsBlueberry();
-	this.instance.setTransform(-14.85,-15,0.3,0.3);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.blueberry, new cjs.Rectangle(-14.8,-15,29.700000000000003,30), null);
 
 
 (lib.HEAD2 = function(mode,startPosition,loop,reversed) {
@@ -1213,35 +1213,35 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_6
 	this.instance_7 = new lib.grapefruit();
-	this.instance_7.setTransform(258.55,13.05,0.8162,0.8162);
+	this.instance_7.setTransform(234.25,12.7,0.8141,0.8141);
 	this.instance_7.alpha = 0.3008;
 	this.instance_7._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(55).to({_off:false},0).to({alpha:1},2).wait(108).to({alpha:0},13).to({_off:true},1).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(55).to({_off:false},0).to({alpha:1},2).to({_off:true},120).wait(42));
 
 	// Layer_5
 	this.instance_8 = new lib.grapespur();
-	this.instance_8.setTransform(233.8,25.15,0.8162,0.8162);
+	this.instance_8.setTransform(258.45,25.45,0.8141,0.8141);
 	this.instance_8.alpha = 0.3008;
 	this.instance_8._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(51).to({_off:false},0).to({alpha:1},2).wait(112).to({alpha:0},13).to({_off:true},1).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(49).to({_off:false},0).to({alpha:1},2).to({_off:true},126).wait(42));
 
-	// Layer_4
-	this.instance_9 = new lib.blueberry();
-	this.instance_9.setTransform(258.45,37.55,0.8162,0.8162);
+	// Layer_10
+	this.instance_9 = new lib.leavesgrgr();
+	this.instance_9.setTransform(234.15,37.75,0.8141,0.8141);
 	this.instance_9.alpha = 0.3008;
 	this.instance_9._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(45).to({_off:false},0).to({alpha:1},2).wait(118).to({alpha:0},13).to({_off:true},1).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(46).to({_off:false},0).to({alpha:1},2).to({_off:true},129).wait(42));
 
 	// Layer_3
 	this.instance_10 = new lib.papaya();
-	this.instance_10.setTransform(295.25,25.4,0.8162,0.8162);
+	this.instance_10.setTransform(294,25.7,0.8141,0.8141);
 	this.instance_10.alpha = 0.3008;
 	this.instance_10._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(43).to({_off:false},0).to({alpha:1},2).wait(120).to({alpha:0},13).to({_off:true},1).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(43).to({_off:false},0).to({alpha:1},2).to({_off:true},132).wait(42));
 
 	// bkgd
 	this.shape_1 = new cjs.Shape();
@@ -1263,7 +1263,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/IFM321_Display_Piece_320x50_atlas_P_1.png?1630429104801", id:"IFM321_Display_Piece_320x50_atlas_P_1"}
+		{src:"images/IFM321_Display_Piece_320x50_atlas_P_1.png?1630450073161", id:"IFM321_Display_Piece_320x50_atlas_P_1"}
 	],
 	preloads: []
 };
